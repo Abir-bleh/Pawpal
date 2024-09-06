@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPal - Your Trusted Pet Adoption Partner</title>
+  <meta name="title" content="PawPal - Your Trusted Pet Adoption Partner">
+  <meta name="description" content="A small frontend website project">
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preload" as="image" href="./assets/images/hero-background.webp">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">PawPal</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#collection" class="navbar-link" data-nav-link>Collections</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#order" class="navbar-link" data-nav-link>Order</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+        <a href="#" class="navbar-action-btn">Log In</a>
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="action-btn" aria-label="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn user" aria-label="User">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn" aria-label="cart">
+          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-background.webp')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <span class="span">Find your furry friend <br> with</span>
+            PawPal!
+          </h1>
+
+          <p class="hero-text">Get your pet care<br> necessities all in one place</p>
+
+          <a href="#intro" class="btn">Get Started</a>
+
+        </div>
+      </section>
+
+      <!-- INTRO -->
+
+      <section class="section service" aria-label="service">
+        <div class="container" id="intro">
+
+          <h2 class="h2 section-title">
+            <span class="span">How</span> It Works
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/DrawKit Vector Illustration Animal & Pets (11).jpg" width="100" height="100"
+                    loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Choose from our collection</h3>
+
+                <p class="card-text">
+                  Find your perfect pet from our collection of furry babies!
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/DrawKit Vector Illustration Animal & Pets (7).jpg" width="100" height="100"
+                    loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Give them a Shelter</h3>
+
+                <p class="card-text">
+                  Choose your precious pet from our collection of rescue animals.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/DrawKit Vector Illustration Animal & Pets (16).jpg" width="100" height="100"
+                    loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">We'll get them home!</h3>
+
+                <p class="card-text">
+                  After confirming your order, we'll rehome the animals for you.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/DrawKit Vector Illustration Animal & Pets (21).jpg" width="100" height="100"
+                    loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Get Premium Pet Supplies!</h3>
+
+                <p class="card-text">
+                  Explore our shop and discover your favorite pet supplies at unbeatable prices!
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category cat-margin" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="collection">
+            <span class="span">Find</span> Your Pick
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/category-cats.webp" width="330" height="300" loading="lazy" alt="Cats"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#cats" class="card-title">Cats</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/category-dogs-1.webp" width="330" height="300" loading="lazy" alt="Dogs"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#dogs" class="card-title">Dogs</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/category-birds.webp" width="330" height="300" loading="lazy" alt="Birds"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#birds" class="card-title">Birds</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/category-rescue-animals.webp" width="330" height="300" loading="lazy"
+                    alt="Rescue Animals" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#rescue-animals" class="card-title">Rescue Animals</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/istockphoto-1248454290-612x612.jpg" width="330" height="300" loading="lazy"
+                    alt="Pet Supplies" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#shop" class="card-title">Pet Supplies</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+          <h2 class="h2 section-title" id="cats">
+            <span class="span sections">CATS</span>
+          </h2>
+          <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="category-card">
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-frank-minjarez-333886454-16282655.webp" width="330" height="300"
+                    loading="lazy" alt="Cats" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #01 - Crookshanks<br>
+                  Age - 18 months<br>
+                  Mirpur, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-anna-morgan-75707674-12492543.webp" width="330" height="300"
+                    loading="lazy" alt="Dogs" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #02 - Minnie<br>
+                  Age - 20 months<br>
+                  Dhanmondi, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-fads-15236914.webp" width="330" height="300" loading="lazy"
+                    alt="Birds" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #03 - Lostris<br>
+                  Age - 12 months<br>
+                  Baridhara, Dhaka
+                </h3>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-kelly-carson-285179239-16577568.webp" width="330" height="300"
+                    loading="lazy" alt="Rescue Animals" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #04 - Kittie<br>
+                  Age - 14 months<br>
+                  Lalmatia, Dhaka
+                </h3>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-toniferreiraphotos-14681762.webp" width="330" height="300"
+                    loading="lazy" alt="Pet Supplies" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #05 - Timmy<br>
+                  Age - 14 months<br>
+                  Farmgate, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="dogs">
+            <span class="span sections">DOGS</span>
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-leah-newhouse-50725-540524.webp" width="330" height="300"
+                    loading="lazy" alt="Cats" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #01 - Laura<br>
+                  Age - 15 months<br>
+                  Lalmatia, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-muffinsaurs-994174.webp" width="330" height="300" loading="lazy"
+                    alt="Dogs" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #02 - Murphy<br>
+                  Age - 12 months<br>
+                  Uttara, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-kuiyibo-12002618.webp" width="330" height="300" loading="lazy"
+                    alt="Birds" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #03 - Max<br>
+                  Age - 24 months<br>
+                  Banani, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-wildlittlethingsphoto-1938126.webp" width="330" height="300"
+                    loading="lazy" alt="Rescue Animals" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #04 - Tom<br>
+                  Age - 14 months<br>
+                  Pallabi, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-maciej-cisowski-174297128-11079312.webp" width="330" height="300"
+                    loading="lazy" alt="Pet Supplies" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #05 - Leo<br>
+                  Age - 22 months<br>
+                  Dhanmondi, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="birds">
+            <span class="span sections">BIRDS</span>
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-valeriya-860605.webp" width="330" height="300" loading="lazy"
+                    alt="Cats" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #01 - Ting<br>
+                  Age - 03 months<br>
+                  Dhanmondi, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-pixabay-161571.webp" width="330" height="300" loading="lazy"
+                    alt="Dogs" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #02 - Hedwig<br>
+                  Age - 01 month<br>
+                  Mirpur, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/category-birds.webp" width="330" height="300" loading="lazy" alt="Birds"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #03 - Pew<br>
+                  Age - 02 months<br>
+                  Uttara, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-caio-56733.webp" width="330" height="300" loading="lazy"
+                    alt="Rescue Animals" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #04 - Morgan<br>
+                  Age - 06 months<br>
+                  Kaalshi, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-skitterphoto-1058939.webp" width="330" height="300" loading="lazy"
+                    alt="Pet Supplies" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #05 - Yin<br>
+                  Age - 22 months<br>
+                  Dhanmondi, Dhaka
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="rescue-animals">
+            <span class="span sections">RESCUE ANIMALS</span>
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-ifaw-5486951.webp" width="330" height="300" loading="lazy" alt="Cats"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #01 - Rescued Dog<br>
+                  Pawpal, Dhaka.
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-ifaw-5486954.webp" width="330" height="300" loading="lazy" alt="Dogs"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #02 - Rescued Wallaby<br>
+                  Pawpal, Dhaka.
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-ifaw-5487073.webp" width="330" height="300" loading="lazy"
+                    alt="Birds" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #03 - Rescued Turtle<br>
+                  Pawpal, Dhaka.
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-mikhail-nilov-7470755.webp" width="330" height="300" loading="lazy"
+                    alt="Rescue Animals" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #04 - Rescued Dog 2<br>
+                  Pawpal, Dhaka.
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./assets/images/pexels-pranidchakan-boonrom-101111-1350588.webp" width="330" height="300"
+                    loading="lazy" alt="Pet Supplies" class="img-cover">
+                </figure>
+
+                <h3 class="h3 names">
+                  #05 - Rescued Dog 3<br>
+                  Pawpal, Dhaka.
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product" id="shop" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Best</span> Selling Products and <span class="span">Hot</span> Deals
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/Bases_2x_780x_689d6553-7561-4849-8f36-7490085d2854_780x.jpg" width="360"
+                    height="360" loading="lazy" alt="dog food" class="img-cover default">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(1)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">000 - Primal Pronto Dog Food</a>
+                  </h3>
+
+                  <data class="card-price" value="30">$30.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img
+                    src="./assets/images/Meow-Mix-Original-Choice-Dry-Cat-Food-3-15-Pound-Bag_5f342392-f358-45da-be5c-00f73043744d.4fc896855ea9144b068e32d239b643fd.webp"
+                    width="360" height="360" loading="lazy" alt="Purus consequat congue sit" class="img-cover default">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">001 - Meow Mix Cat Food</a>
+                  </h3>
+
+                  <data class="card-price" value="35">$35.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/sd-canine-adult-7-plus-beef-barley-entree-canned-productShot_500.avif"
+                    width="360" height="360" loading="lazy" alt="Morbi vel arcu scelerisque" class="img-cover default">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">010 - Beef & Barley Dog Food</a>
+                  </h3>
+
+                  <data class="card-price" value="45">$45.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img
+                    src="./assets/images/3-D-Pet-Products-Premium-Parrot-Bird-Food-Seeds-with-Probiotics-8-lb-Bag_a1097024-37bb-453b-8ed1-6bc0d656f0a1.53707ec78c953d77e64f1d9140404841.webp"
+                    width="360" height="360" loading="lazy" alt="Morbi vel arcu scelerisque" class="img-cover default">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">011 - Premium Parrot Food</a>
+                  </h3>
+
+                  <data class="card-price" value="29">$29.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/GroomingShampoo_1_ba738813-5e82-445f-9e5d-124f7c224777.webp" width="360"
+                    height="360" loading="lazy" alt="Morbi vel arcu scelerisque" class="img-cover default">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">100 - Wahl Dog Grooming Shampoo</a>
+                  </h3>
+
+                  <data class="card-price" value="59">$59.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/S3b0b2b4ef1da4d8f86c43af570335ab6W.jpg_640x640Q90.jpg_.webp" width="360"
+                    height="360" loading="lazy" alt="Nam justo libero porta ege" class="img-cover default">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">101 - Premium Pet Grooming Brush</a>
+                  </h3>
+
+                  <data class="card-price" value="15">$15.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/pa-ty-226-e-pet-needs-original-imafwrmfhme9chhf.webp" width="360"
+                    height="360" loading="lazy" alt="Nam justo libero porta ege" class="img-cover default">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">110 - 6 Pcs Chew Toy</a>
+                  </h3>
+
+                  <data class="card-price" value="30">$30.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/71eYpjdkSPL.webp" width="360" height="360" loading="lazy"
+                    alt="Etiam commodo leo sed" class="img-cover default">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">111 - 6 Pcs Mouse Toy</a>
+                  </h3>
+
+                  <data class="card-price" value="29">$29.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+              - #OFFERS
+            -->
+
+      <section class="section offer" aria-label="offer">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/offer-banner-1.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">Selected Items. Online Only.</p>
+
+                <h3 class="h3 card-title">
+                  Hot Summer <span class="span">Deals</span>
+                </h3>
+
+                <a href="#" class="btn">Read More</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/offer-banner-2.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">Treats & Grooming</p>
+
+                <h3 class="h3 card-title">
+                  Spoil your true <span class="span">love</span>
+                </h3>
+
+                <a href="#" class="btn">Read More</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/offer-banner-3.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">Products your pet Will Love</p>
+
+                <h3 class="h3 card-title">
+                  New in this <span class="span">year</span>
+                </h3>
+
+                <a href="#" class="btn">Read More</a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+
+          <img src="./assets/images/service-image.png" width="122" height="136" loading="lazy" alt="" class="img">
+
+          <h2 class="h2 section-title">
+            <span class="span">What your pet needs,</span> when they need it.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Free Delivery</h3>
+
+                <p class="card-text">
+                  For Orders over 40$, Free Delivery and Free Rehoming of pets!
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-2.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">7 Day Return</h3>
+
+                <p class="card-text">
+                  Drop off the furry baby in our adoption center within 7 days if necessary.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-3.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Security payment</h3>
+
+                <p class="card-text">
+                  25% off your online order of $50+, and 5% off on all future orders.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-4.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">24/7 Support</h3>
+
+                <p class="card-text">
+                  Contact our Vet anytime to ensure your pet gets round-the-clock medical care and support.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta has-bg-image" aria-label="cta" style="background-image: url('./assets/images/cta-bg.jpg')">
+        <div class="container">
+
+          <figure class="cta-banner">
+            <img src="./assets/images/cta-banner.webp" width="900" height="660" loading="lazy" alt="cat" class="w-100">
+          </figure>
+
+          <div class="cta-content">
+
+            <img src="./assets/images/vecteezy_cute-star-icon_24781395.png" width="120" height="35" loading="lazy"
+              alt="taste guarantee" class="img">
+
+            <h2 class="h2 section-title">Meet your perfect match, or we'll help you find a better fit… Guaranteed!</h2>
+
+            <p class="section-text">
+              At PawPal, we believe you'll fall in love with your new furry friend. If it's not the perfect match, we'll
+              work with you
+              to find the right companion. That’s our adoption guarantee.
+            </p>
+
+            <a href="#order" class="btn">Place your order Now</a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #BRAND
+      -->
+
+      <section class="section brand" aria-label="brand">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Promotions</span>
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 100; --height: 100;">
+                <img src="./assets/images/brand-1.jpg" width="100" height="100" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 100; --height: 100;">
+                <img src="./assets/images/brand-2.jpg" width="100" height="100" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 100; --height: 100;">
+                <img src="./assets/images/brand-3.jpg" width="100" height="100" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 100; --height: 100;">
+                <img src="./assets/images/brand-4.jpg" width="100" height="100" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 100; --height: 100;">
+                <img src="./assets/images/brand-5.jpg" width="100" height="100" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- FORM -->
+      <section class="section-form" id="order">
+        <div class="container">
+          <div class="forms">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Place Your Order Here!</h2>
+              <p class="cta-text">
+                Fill up this form and we'll contact you in a short time with the details.
+              </p>
+
+              <form class="cta-form" name="Place-Order" netlify>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input id="full-name" type="text" placeholder="John Wick" name="full-name" required />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input id="email" type="email" placeholder="me@example.com" name="email" required />
+                </div>
+
+                <div>
+                  <label for="order">Item and Code</label>
+                  <input id="order" type="text" placeholder="Dog #03" name="order" required />
+                </div>
+
+                <button class="btn btn--form order-btn">Order Now</button>
+
+              </form>
+            </div>
+            <div class="cta-img-box" role="img" aria-label="Woman enjoying food">
+              <img src="./assets/images/pexels-wildlittlethingsphoto-1938123.webp" width="100" height="100"
+                loading="lazy" alt="brand logo" class="img-cover">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand" id="contact">
+
+          <a href="#home" class="logo">PawPal</a>
+
+          <p class="footer-text">
+            If you have any question, please contact us at <a href="mailto:abirdrmc11852@gmail.com"
+              class="link">support@gmail.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                337/2 Chiriyakhana Road Mirpur Dhaka
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+8801631053749" class="contact-link">01631053749</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Corporate</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Vendors</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Affiliate Program</a>
+          </li>
+
+          <li>
+            <a href="#order" class="footer-link">Order Now</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#shop" class="footer-link">Online Store</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Track Order</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Grooming</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pet Training</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Veterinary Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">PawPal Insurance</a>
+          </li>
+
+          <li>
+            <a href="#collection" class="footer-link">Pet Adoption</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Resource Center</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 Made by ♥ <a href="#" class="copyright-link">Abir</a>
+        </p>
+
+        <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <script src="script.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
